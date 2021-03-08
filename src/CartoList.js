@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import CardListItem from './CartoListItem'
-import { fade, makeStyles } from '@material-ui/core/styles';
 
 export default function CartoList() {
   const [cartoTables, setCartoTables] = useState([]);

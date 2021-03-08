@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Paper from '@material-ui/core/Paper';
+import CardListItem from './CartoListItem'
 import { fade, makeStyles } from '@material-ui/core/styles';
 
 export default function CartoList() {
@@ -10,7 +10,6 @@ export default function CartoList() {
 
     const { rows: tableNames } = await cartoTablesPromise.json();
 
-    console.log(tableNames);
     setCartoTables(tableNames);
   }
 
@@ -21,17 +20,10 @@ export default function CartoList() {
   return (
     <div>
       {cartoTables.map(table => (
-        <Paper
+        <CardListItem
           key={table.cartodb_id}
-          style={
-            {
-              margin: '10px',
-              padding: '15px'
-            }
-          }
-        >
-          {table.cdb_usertables}
-        </Paper>
+          item={table}
+        />
       ))}
     </div>
   )

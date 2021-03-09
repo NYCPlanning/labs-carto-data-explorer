@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Carto Data Explorer
+
+A WIP Labs hackathon-project. Explore the EDM-supported datasets that Labs applications use!
+
+EDM = NYC Planning's Enterprise Data Management team.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
